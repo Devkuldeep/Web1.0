@@ -2,80 +2,692 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dentytech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Dentytech — modern digital experiences designed to make your brand unforgettable.">
+
+    <title>Dentytech — Digital Experiences</title>
+
     <link rel="icon" type="image/x-icon" href="/assests/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="main">
-        <div class="cursor-follower"></div>
-        <header>
-            <nav>
+    <!-- Custom Cursor -->
+    <div class="cursor-follower"></div>
 
-                <div class="navLinks">
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
 
-                    <h3>Menu</h3>
-                    <i class="ri-menu-3-line"></i>
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+        </button>
 
+        <nav class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-                </div>
-
-                <div class="logo">
-                    <h3>Dentytech</h3>
-                </div>
-
-                <div class="navBtn">
-                    <button>Log In</button>
-                    <button>Sign Up</button>
-                </div>
-
-
-
-            </nav>
-        </header>
-         
-        <main>
-            <section class="hero">
-                <div class="intro">
-                    <h1>Welcome to Dentytech</h1>
-
-                    <img  class="hero_img" src="https://images.unsplash.com/photo-1540331547168-8b63109225b7?q=80&w=1438&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="">
-
-                    <img class="hero_img"  src="https://images.unsplash.com/photo-1579533183840-16ee351d4dfb?q=80&w=1579&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="">
-                   
-                    <img  class="hero_img" src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="">
-                    <img  class="hero_img" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="">
-                  
-                </div>
-                <div class="hero_bottom">
-
-                    <h4>develop by kuldeep</h4>
-                    <span>
-                        <i class="ri-arrow-fill"></i>                        
-                    </span>
-                    <div class="social_media">  
-                        <a href="https://www.instagram.com/_.kuldeeppatel._"><i class="ri-instagram-line"></i></a>
-                        <a href="https://github.com/kuldeepg3"><i class="ri-github-line"></i></a>
-                        <a href="https://www.linkedin.com/in/kuldeep-patel-09a0041a7"><i class="ri-linkedin-box-line"></i></a>
-                    </div>
-                    
-
-                </div>
-            </section>
-        </main>
+        <div class="mobile-socials">
+            <a href="#" aria-label="Instagram">
+                <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" aria-label="Github">
+                <i class="ri-github-line"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <i class="ri-linkedin-box-line"></i>
+            </a>
+        </div>
 
     </div>
 
 
+    <!-- ================= HEADER ================= -->
 
+    <header class="header" id="header">
+
+        <nav class="navbar">
+
+            <button class="menu-btn" id="menuBtn">
+                <span>Menu</span>
+                <i class="ri-menu-3-line"></i>
+            </button>
+
+            <a href="#home" class="logo">
+                Dentytech<span>.</span>
+            </a>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline">
+                    Log In
+                </a>
+
+                <a href="#contact" class="btn btn-primary">
+                    Sign Up
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    Creative digital studio
+                </p>
+
+                <h1>
+                    Welcome to
+                    <span>Dentytech</span>
+                </h1>
+
+                <p class="hero-description">
+                    We create digital experiences where bold ideas,
+                    thoughtful design and modern technology come together.
+                </p>
+
+                <div class="hero-cards">
+
+                    <div class="image-card card-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1540331547168-8b63109225b7?q=80&w=1000&auto=format&fit=crop"
+                            alt="Creative portrait"
+                        >
+                    </div>
+
+                    <div class="image-card card-2">
+                        <img
+                            src="https://images.unsplash.com/photo-1579533183840-16ee351d4dfb?q=80&w=1000&auto=format&fit=crop"
+                            alt="Fashion portrait"
+                        >
+                    </div>
+
+                    <div class="image-card card-3">
+                        <img
+                            src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=1000&auto=format&fit=crop"
+                            alt="Portrait"
+                        >
+                    </div>
+
+                    <div class="image-card card-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1000&auto=format&fit=crop"
+                            alt="Creative portrait"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom">
+
+                <p class="developer">
+                    Developed by Kuldeep
+                </p>
+
+                <a href="#about" class="scroll-btn" aria-label="Scroll down">
+                    <i class="ri-arrow-down-line"></i>
+                </a>
+
+                <div class="social-media">
+
+                    <a
+                        href="https://www.instagram.com/_.kuldeeppatel._"
+                        target="_blank"
+                        aria-label="Instagram"
+                    >
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/kuldeepg3"
+                        target="_blank"
+                        aria-label="Github"
+                    >
+                        <i class="ri-github-line"></i>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/kuldeep-patel-09a0041a7"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about" id="about">
+
+            <div class="section-label">
+                <span>01</span>
+                <p>About us</p>
+            </div>
+
+            <div class="about-content">
+
+                <p class="small-title">
+                    Who we are
+                </p>
+
+                <h2>
+                    We believe great digital
+                    experiences should feel
+                    <span>simple, bold & human.</span>
+                </h2>
+
+                <div class="about-bottom">
+
+                    <p>
+                        Dentytech combines design, strategy and technology
+                        to transform ideas into memorable digital products.
+                        We focus on clean interfaces, meaningful interactions
+                        and experiences people actually enjoy using.
+                    </p>
+
+                    <a href="#services" class="round-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MARQUEE ================= -->
+
+        <section class="marquee-section">
+
+            <div class="marquee">
+
+                <div class="marquee-track">
+
+                    <span>DESIGN</span>
+                    <i class="ri-asterisk"></i>
+
+                    <span>DEVELOPMENT</span>
+                    <i class="ri-asterisk"></i>
+
+                    <span>CREATIVITY</span>
+                    <i class="ri-asterisk"></i>
+
+                    <span>STRATEGY</span>
+                    <i class="ri-asterisk"></i>
+
+                    <span>DESIGN</span>
+                    <i class="ri-asterisk"></i>
+
+                    <span>DEVELOPMENT</span>
+                    <i class="ri-asterisk"></i>
+
+                    <span>CREATIVITY</span>
+                    <i class="ri-asterisk"></i>
+
+                    <span>STRATEGY</span>
+                    <i class="ri-asterisk"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section class="section services" id="services">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    <span>02</span>
+                    <p>Our services</p>
+                </div>
+
+                <h2>
+                    What we
+                    <em>do.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="services-list">
+
+                <article class="service-item">
+
+                    <span class="service-number">
+                        01
+                    </span>
+
+                    <div class="service-name">
+                        <h3>Web Design</h3>
+
+                        <p>
+                            Interfaces that combine visual identity,
+                            usability and thoughtful interaction.
+                        </p>
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+
+                </article>
+
+
+                <article class="service-item">
+
+                    <span class="service-number">
+                        02
+                    </span>
+
+                    <div class="service-name">
+                        <h3>Development</h3>
+
+                        <p>
+                            Fast, responsive and scalable websites built
+                            using modern technologies.
+                        </p>
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+
+                </article>
+
+
+                <article class="service-item">
+
+                    <span class="service-number">
+                        03
+                    </span>
+
+                    <div class="service-name">
+                        <h3>UI / UX</h3>
+
+                        <p>
+                            Product experiences designed around clarity,
+                            simplicity and real user behaviour.
+                        </p>
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+
+                </article>
+
+
+                <article class="service-item">
+
+                    <span class="service-number">
+                        04
+                    </span>
+
+                    <div class="service-name">
+                        <h3>Brand Identity</h3>
+
+                        <p>
+                            Digital identities that help brands become
+                            recognizable, consistent and memorable.
+                        </p>
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WORK ================= -->
+
+        <section class="section work" id="work">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    <span>03</span>
+                    <p>Selected work</p>
+                </div>
+
+                <h2>
+                    Projects we're
+                    <em>proud of.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <article class="project project-large">
+
+                    <a href="#" class="project-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1600&auto=format&fit=crop"
+                            alt="Digital product project"
+                        >
+
+                        <span class="project-arrow">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </span>
+
+                    </a>
+
+                    <div class="project-info">
+
+                        <div>
+                            <h3>Digital Future</h3>
+                            <p>Web Design / Development</p>
+                        </div>
+
+                        <span>2026</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project">
+
+                    <a href="#" class="project-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop"
+                            alt="Creative website"
+                        >
+
+                        <span class="project-arrow">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </span>
+
+                    </a>
+
+                    <div class="project-info">
+
+                        <div>
+                            <h3>Think Different</h3>
+                            <p>UI / UX / Branding</p>
+                        </div>
+
+                        <span>2026</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project">
+
+                    <a href="#" class="project-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop"
+                            alt="Mobile experience"
+                        >
+
+                        <span class="project-arrow">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </span>
+
+                    </a>
+
+                    <div class="project-info">
+
+                        <div>
+                            <h3>Next Experience</h3>
+                            <p>Product / Development</p>
+                        </div>
+
+                        <span>2025</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project project-large">
+
+                    <a href="#" class="project-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+                            alt="Creative team"
+                        >
+
+                        <span class="project-arrow">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </span>
+
+                    </a>
+
+                    <div class="project-info">
+
+                        <div>
+                            <h3>Human Connection</h3>
+                            <p>Strategy / Digital</p>
+                        </div>
+
+                        <span>2025</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROCESS ================= -->
+
+        <section class="section process">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    <span>04</span>
+                    <p>Process</p>
+                </div>
+
+                <h2>
+                    From idea to
+                    <em>experience.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <article class="process-card">
+                    <span>01</span>
+
+                    <i class="ri-search-eye-line"></i>
+
+                    <h3>Discover</h3>
+
+                    <p>
+                        We understand your business, audience,
+                        objectives and the problem we need to solve.
+                    </p>
+                </article>
+
+
+                <article class="process-card">
+                    <span>02</span>
+
+                    <i class="ri-pencil-ruler-2-line"></i>
+
+                    <h3>Design</h3>
+
+                    <p>
+                        We turn insights into visual systems,
+                        interfaces and thoughtful interactions.
+                    </p>
+                </article>
+
+
+                <article class="process-card">
+                    <span>03</span>
+
+                    <i class="ri-code-s-slash-line"></i>
+
+                    <h3>Build</h3>
+
+                    <p>
+                        We transform the design into responsive,
+                        performant and maintainable experiences.
+                    </p>
+                </article>
+
+
+                <article class="process-card">
+                    <span>04</span>
+
+                    <i class="ri-rocket-2-line"></i>
+
+                    <h3>Launch</h3>
+
+                    <p>
+                        We test, optimize and launch your experience
+                        ready for the real world.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta" id="contact">
+
+            <div class="cta-orb orb-one"></div>
+            <div class="cta-orb orb-two"></div>
+
+            <p>Have something in mind?</p>
+
+            <h2>
+                Let's create
+                <span>something great.</span>
+            </h2>
+
+            <a href="mailto:hello@dentytech.com" class="cta-button">
+
+                <span>Start a project</span>
+
+                <i class="ri-arrow-right-up-line"></i>
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <a href="#home" class="footer-logo">
+                Dentytech<span>.</span>
+            </a>
+
+            <p>
+                Design. Develop.<br>
+                Make it memorable.
+            </p>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span> Dentytech
+            </p>
+
+            <div class="footer-links">
+
+                <a
+                    href="https://www.instagram.com/_.kuldeeppatel._"
+                    target="_blank"
+                >
+                    Instagram
+                </a>
+
+                <a
+                    href="https://github.com/kuldeepg3"
+                    target="_blank"
+                >
+                    Github
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/kuldeep-patel-09a0041a7"
+                    target="_blank"
+                >
+                    LinkedIn
+                </a>
+
+            </div>
+
+            <a href="#home" class="back-top">
+                Back to top
+                <i class="ri-arrow-up-line"></i>
+            </a>
+
+        </div>
+
+    </footer>
 
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
